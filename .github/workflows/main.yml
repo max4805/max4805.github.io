@@ -42,7 +42,7 @@ jobs:
           git branch -d gh-pages || true
           git checkout -b gh-pages
           git add .
-          git commit -m '[ci] commit build artifacts'
+          git commit -m 'Push built app to GitHub Pages'
 
       - name: Push changes
         uses: ad-m/github-push-action@master
