@@ -6,7 +6,7 @@ const vue = {
 
   // redirect to Banana Mirror Browser, since this is the only page on that website
   mounted: function () {
-    router.push('/celeste/banana-mirror-browser')
+    router.push("/celeste/banana-mirror-browser");
   },
 };
 
