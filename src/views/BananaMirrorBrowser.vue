@@ -136,7 +136,7 @@ const vue = {
     totalCount: 0,
     query: "",
     mods: [],
-    mirror: { id: "jade", name: "0x0a.de (Germany)" },
+    mirror: { id: "wegfan", name: "China (weg.fan)" },
     sort: { sortId: "latest", name: "Creation date" },
     categoryFilter: { name: "All" },
     categories: [{ name: "All" }],
