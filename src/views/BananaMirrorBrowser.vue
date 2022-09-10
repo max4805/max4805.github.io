@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="!hide">
     <h1>Banana Mirror Browser</h1>
 
     <div>
@@ -132,6 +132,7 @@ const vue = {
   components: { ModListItem, VueMultiselect },
   name: "banana-mirror-browser",
   data: () => ({
+    hide: true,
     page: 1,
     totalCount: 0,
     query: "",
@@ -242,6 +243,24 @@ const vue = {
     },
   },
   mounted: async function () {
+    try {
+      // if max480-random-stuff.appspot.com is reachable, people should use it instead!
+      const test = await axios.get(
+        `${config.backendUrl}/celeste/gamebanana-categories?version=3`
+      );
+      if (test.data.indexOf("All") >= 0) {
+        window.location.href = config.backendUrl;
+        return;
+      }
+    } catch (e) {
+      console.error(
+        `${config.backendUrl}/celeste/gamebanana-categories is unreachable: `,
+        e
+      );
+    }
+
+    this.hide = false;
+
     this.reloadPage();
 
     // also load the category list.
