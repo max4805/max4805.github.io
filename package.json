@@ -13,7 +13,7 @@
     "bootstrap": "^5.2.1",
     "core-js": "^3.25.3",
     "js-yaml": "^4.1.0",
-    "vue": "^3.2.39",
+    "vue": "^3.2.40",
     "vue-multiselect": "^3.0.0-alpha.2",
     "vue-router": "^4.1.5",
     "vuex": "^4.0.2"
