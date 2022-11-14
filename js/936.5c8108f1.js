@@ -1,0 +1,1 @@
+"use strict";(self["webpackChunkmax480_random_stuff_front"]=self["webpackChunkmax480_random_stuff_front"]||[]).push([[936],{936:function(n,r,t){t.r(r),t.d(r,{default:function(){return f}});var o=t(120);const u={name:"route-not-found",mounted:function(){o.Z.push("/celeste/banana-mirror-browser")}};var a=u;const e=a;var f=e}}]);
